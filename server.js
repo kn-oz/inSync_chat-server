@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 
   const chatClient = new StreamChat(appKEY, secret);
 
-  app.post('/api/get-token', async (req, res) => {
+  app.get('/api/get-token', async (req, res) => {
     const { user_id } = req.body;
     try {
       const token = await chatClient.createToken(user_id.toString());
