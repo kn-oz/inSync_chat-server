@@ -18,6 +18,7 @@ app.use(function(req, res, next) {
 
   app.post('/api/get-token', async (req, res) => {
     const { user_id } = req.body;
+    console.log("request arrived");
     try {
       const token = await chatClient.createToken(user_id.toString());
       console.log(token)
