@@ -14,8 +14,8 @@ app.use(function(req, res, next) {
     next();
   });
 
-  const appKEY = "8fy6kehyvp26";
-  const secret = "eprtst9dj2ddq9adgkpqc6u4v62h4qey7vnyks5j7t94n24nnb4vjs6bz34st777";
+  const appKEY = "g4rgwgxebtqf";
+  const secret = "2kxgzutpke327u3n6bgtz6vagwhzjp5gm7rem7eybrcnbq3d2zwup54eg46fmqzb";
 
   const chatClient = new StreamChat(appKEY, secret);
 
